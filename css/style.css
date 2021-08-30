@@ -1,0 +1,23 @@
+body{
+    background-color: rgba(255, 237, 136, .3);
+}
+
+main{
+    background-color: white;
+    height: calc(100vh - 180px);
+}
+
+header{
+    background-color: rgb(255, 196, 0);
+    height: 100px;
+}
+
+.small-img > img{
+    width: 15%;
+}
+
+footer{
+    background-color: rgb(248, 42, 76);
+    color: white;
+    height: 80px;
+}
