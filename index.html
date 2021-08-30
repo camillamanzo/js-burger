@@ -30,29 +30,29 @@
                         <div class="row">
 
                             <section>
-                                <input type="text" id="name" class="py-1 mt-3" placeholder="Name your burger">
+                                <input type="text" id="name" class="py-1 mt-3 border-0 fs-2 text" placeholder="Name your burger"></input>
                             </section>
 
                             <section>
                                 <h2>Ingredients</h2>
-                                <ul class="list-unstyled">
-                                    <li class="col-6 pb-2">
-                                        <span class="small-img"><img class="rounded-circle" src="./img/burger.jpg" alt=""></span> Cheese <span class="add-btn"><input type="checkbox"> add</span> 
+                                <ul class="list-unstyled row">
+                                    <li class="col-6 pb-2 list-item">
+                                        <span class="small-img"><img class="rounded-circle" src="./img/burger.jpg" alt=""></span> Cheese <span class="add-btn"><input class="check" type="checkbox"> add</span> 
                                     </li>
-                                    <li class="col-6 pb-2">
-                                        <span class="small-img"><img class="rounded-circle" src="./img/burger.jpg" alt=""></span> Avocado <span class="add-btn"><input type="checkbox"> add</span> 
+                                    <li class="col-6 pb-2 list-item">
+                                        <span class="small-img"><img class="rounded-circle" src="./img/burger.jpg" alt=""></span> Avocado <span class="add-btn"><input class="check" type="checkbox"> add</span> 
                                     </li>
-                                    <li class="col-6 pb-2">
-                                        <span class="small-img"><img class="rounded-circle" src="./img/burger.jpg" alt=""></span> Egg <span class="add-btn"><input type="checkbox"> add</span> 
+                                    <li class="col-6 pb-2 list-item">
+                                        <span class="small-img"><img class="rounded-circle" src="./img/burger.jpg" alt=""></span> Egg <span class="add-btn"><input class="check" type="checkbox"> add</span> 
                                     </li>
-                                    <li class="col-6 pb-2">
-                                        <span class="small-img"><img class="rounded-circle" src="./img/burger.jpg" alt=""></span> Tomato <span class="add-btn"><input type="checkbox"> add</span> 
+                                    <li class="col-6 pb-2 list-item">
+                                        <span class="small-img"><img class="rounded-circle" src="./img/burger.jpg" alt=""></span> Tomato <span class="add-btn"><input class="check" type="checkbox"> add</span> 
                                     </li>
-                                    <li class="col-6 pb-2">
-                                        <span class="small-img"><img class="rounded-circle" src="./img/burger.jpg" alt=""></span> Extra burger <span class="add-btn"><input type="checkbox"> add</span> 
+                                    <li class="col-6 pb-2 list-item">
+                                        <span class="small-img"><img class="rounded-circle" src="./img/burger.jpg" alt=""></span> Extra burger <span class="add-btn"><input class="check" type="checkbox"> add</span> 
                                     </li>
-                                    <li class="col-6 pb-2">
-                                        <span class="small-img"><img class="rounded-circle" src="./img/burger.jpg" alt=""></span> Bacon <span class="add-btn"><input type="checkbox"> add</span> 
+                                    <li class="col-6 pb-2 list-item">
+                                        <span class="small-img"><img class="rounded-circle" src="./img/burger.jpg" alt=""></span> Bacon <span class="add-btn"><input class="check" type="checkbox"> add</span> 
                                     </li>
                                 </ul>
                             </section>
@@ -62,17 +62,18 @@
                             </section>
 
                             <section>
-                                <button class="p-2 my-2">Calculate</button>
+                                <button id="calculate-button" class="p-2 my-2 ">Calculate</button>
                             </section>
                                 
                         </div>
                     </section>
                 </main>
             
-                <footer class="danger">
+                <footer>
                     <section class="container">
                         <div class="row space-between">
-                            <span><h2 class="col-12 mt-3">Your price</h2></span> <span><h2 id="calculated-price"></h2></span>
+                            <span class="col-6 mt-3"><h2>Your price</h2></span> 
+                            <span class="col-6 mt-3"><h2 id="calculated-price"></h2></span>
                         </div>
                     </section>
                 </footer>
