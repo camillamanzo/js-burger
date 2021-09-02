@@ -8,19 +8,43 @@
  */
 
 
+let nomePanino = document.getElementById("name").value;
+let price = 5;
+// console.log(nomePanino);
+
 const calculateButton = document.getElementById("calculate-button")
 
-calculateButton.addEventListener("click", function(){
-    let price = 5;
-    // console.log("bottone cliccato");
 
-    let checks = document.getElementsByClassName("check");
+calculateButton.addEventListener ("click", 
+function(){
 
-    for( let i=0; i < checks.length; i++){
-        if(checks[i].checked){
-            price += 2;
-        }
+    if (nomePanino.length === 0) {
+        alert("Per favore scriva un nome al vostro panino")
+    }else{
+
+        console.log("bottone cliccato");
+        let checks = document.getElementsByClassName("check");
+
+        for( let i=0; i < checks.length; i++){
+            
+            if(checks[i].checked){
+                price += 2;
+            }
     }
+}
+
     document.getElementById("calculated-price").innerHTML = price + " " + "&euro;";
-    console.log(price)
+    let coupon = document.getElementById('coupon-holder')
+
+    let couponList = ["sconto20","sconto1"]
+
+    if (coupon.value.lenght > 0){
+        if (couponList.includes(coupon.value)){
+            price = price * 0.8;
+        }
+    }else if (!couponList.includes(coupon.value)){
+        alert("questo coupon non esiste");
+    }else {
+        document.getElementById("calculated-price").innerHTML = price + " " + "&euro;";
+    }
 })
